@@ -54,12 +54,13 @@ a{
 /* body */
 body{
     background-color: #dedede;
+    min-width: 474px;
 }
 
 /* header */
 header.header, footer{
     height: 60px;
-    min-width: 980px;
+    width: 100%;
     position: relative;
     background-color: #333;
 }
@@ -89,8 +90,9 @@ nav ul li a:hover{
     color: #cecece;
 }
 @media screen and (max-width: 580px){
-    nav ul{
-        display: none;
+    nav ul li{
+        font-size: 12px;
+        padding: 30px 5px 18px;
     }
 }
 
@@ -183,21 +185,27 @@ aside>div{
     /* table-layout: fixed;             参照谷歌的表单样式，但不适合本例 */
     font-size: 14px;
     padding: 7px;
-    width: 500px;
+    width: 378px;
     margin: 0 auto;
     position: relative;
 }
 aside>div>div{
     /*display: table-cell;                参照谷歌的表单样式，但不适合本例 */
-
 }
 aside>div>div:first-child{
     position: absolute;
     left: 0;
     top: 13px;
+    text-align: right;
 }
 aside>div>div:last-child{
-    padding-left: 118px;
+    padding-left: 110px;
+}
+.title1{
+    top: 13px;
+}
+.title2{
+    top: 10px;
 }
 .ipt{
     padding:4px 5px;
@@ -226,6 +234,10 @@ aside>div>div:last-child{
 }
 .selfDes{
     vertical-align: top;
+}
+textarea{
+    width: 291px;
+    height: 150px;
 }
 .submit{
     width:100%;
